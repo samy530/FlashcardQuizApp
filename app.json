@@ -10,12 +10,6 @@
       "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      },
       "predictiveBackGestureEnabled": false,
       "package": "com.samy1000.FlashcardQuizApp"
     },
@@ -24,8 +18,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "7cc8f95c-028f-4f5a-906b-ce3ff7cca876"
+        "projectId": "67a4f46a-ad51-4989-9800-4e182d27cc2a"
       }
-    }
+    },
+    "owner": "samy1000"
   }
 }
