@@ -21,7 +21,7 @@ An interactive study mobile application (similar to Anki/Quizlet) built with **R
 ## 🚀 How to Run Locally
 
 1. Clone the repository:
-git clone https://github.com/samy530 /FlashcardQuizApp.git 
+git clone https://github.com/samy530/FlashcardQuizApp.git
 
 2. Install dependencies: 
 npm install
