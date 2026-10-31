@@ -2,6 +2,12 @@
 
 An interactive study mobile application (similar to Anki/Quizlet) built with **React Native**, **Expo**, and **TypeScript**. This project was developed as part of the **CodeAlpha Internship program**.
 
+## 📥 Download the Android App (APK)
+
+You can test the app directly on your Android device. The compiled installation file (`.apk`) is available in the repository:
+👉 **[Download the APK here](./apk/FlashcardQuizApp.apk)** 
+*(Note: Make sure to enable "Install from unknown sources" on your Android device).*
+
 ## ✨ Features
 
 - **Interactive Quiz Mode**: Type your answer and the app verifies if it is correct (case-insensitive).
