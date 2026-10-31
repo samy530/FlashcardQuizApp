@@ -5,7 +5,7 @@ An interactive study mobile application (similar to Anki/Quizlet) built with **R
 ## 📥 Download the Android App (APK)
 
 You can test the app directly on your Android device. The compiled installation file (`.apk`) is available in the repository:
-👉 **[Download the APK here](./apk/FlashcardQuizApp.apk)** 
+👉 **[Download the APK here](https://github.com/samy530/FlashcardQuizApp.git/apk/FlashcardQuizApp.apk)** 
 *(Note: Make sure to enable "Install from unknown sources" on your Android device).*
 
 ## ✨ Features
