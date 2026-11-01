@@ -5,7 +5,6 @@ import { ThemeProvider, useTheme } from './src/context/ThemeContext';
 function AppContent() {
   const { theme } = useTheme();
   
-  // On utilise les thèmes par défaut de React Navigation mais on les adapte
   const navTheme = theme === 'dark' ? {
     ...DarkTheme,
     colors: {

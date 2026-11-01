@@ -3,7 +3,6 @@ import { Flashcard } from '../models/Flashcard';
 
 const STORAGE_KEY = '@flashcards';
 
-// 10 questions par défaut pour la première ouverture
 const DEFAULT_CARDS: Flashcard[] = [
   {
     id: 'default-1',
@@ -71,7 +70,6 @@ export async function loadFlashcards(): Promise<Flashcard[]> {
   try {
     const raw = await AsyncStorage.getItem(STORAGE_KEY);
     
-    // On vérifie si c'est vide OU si c'est un tableau vide "[]"
     if (!raw || raw === '[]') {
       await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_CARDS));
       return DEFAULT_CARDS;

@@ -12,7 +12,7 @@ export default function ReviewScreen({ route, navigation }: Props) {
   const [userAnswer, setUserAnswer] = useState('');
   const [status, setStatus] = useState<'idle' | 'correct' | 'incorrect'>('idle');
   
-  // Nouveaux états pour le score et la fin du quiz
+ 
   const [score, setScore] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
   
@@ -29,7 +29,7 @@ export default function ReviewScreen({ route, navigation }: Props) {
     
     if (cleanUserAnswer === cleanCorrectAnswer) {
       setStatus('correct');
-      setScore((prev) => prev + 1); // On ajoute 1 au score
+      setScore((prev) => prev + 1);
     } else {
       setStatus('incorrect');
     }
@@ -37,10 +37,9 @@ export default function ReviewScreen({ route, navigation }: Props) {
 
   const goToNext = () => {
     if (isLast) {
-      // Si c'est la dernière carte, on affiche l'écran de fin
+
       setIsFinished(true);
     } else {
-      // Sinon on passe à la suivante
       setIndex(index + 1);
       setUserAnswer('');
       setStatus('idle');
@@ -61,7 +60,7 @@ export default function ReviewScreen({ route, navigation }: Props) {
     setIsFinished(false);
   };
 
-  // --- ÉCRAN DE FIN ---
+  
   if (isFinished) {
     const percentage = Math.round((score / cards.length) * 100);
     
@@ -95,7 +94,6 @@ export default function ReviewScreen({ route, navigation }: Props) {
     );
   }
 
-  // --- ÉCRAN DE QUIZ NORMAL ---
   if (!card) {
     return (
       <View style={[styles.container, { backgroundColor: colors.background }]}>
@@ -193,7 +191,6 @@ const styles = StyleSheet.create({
   navText: { fontWeight: '600' },
   disabled: { opacity: 0.4 },
   
-  // Styles de l'écran de fin
   finishTitle: { fontSize: 28, fontWeight: 'bold', marginBottom: 30 },
   scoreCircle: { width: 150, height: 150, borderRadius: 75, borderWidth: 8, justifyContent: 'center', alignItems: 'center', marginBottom: 20 },
   scoreText: { fontSize: 36, fontWeight: 'bold' },
